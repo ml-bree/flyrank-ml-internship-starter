@@ -72,3 +72,23 @@ text
 | 3. Writing Meeting Minutes | Minutes complete within 24 hours; key decisions and action items captured; shared and approved |
 
 ---
+
+## Screenshots
+
+### Claude Project Configuration
+
+![Claude Project](claude_project_config.png)
+
+### Anthropic Academy Completion
+
+![Anthropic Academy](AI%20Fluency%20enrollment.png)
+
+---
+
+## Key Insight
+
+AI is most helpful for routine, structured tasks (email, scheduling, boilerplate code). Deep thinking, interpretation, and critical judgment still require human attention and "just me" work.
+
+## Reflection
+
+This audit helped me see where AI can multiply my productivity and where I need to stay in the driver's seat. Moving forward, I'll be more intentional about when to delegate, when to collaborate, and when to work alone.
