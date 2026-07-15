@@ -187,3 +187,45 @@ Add real user testing and server-side integration validation.
 ---
 
 ## Final Reusable Prompt
+Write frontend code for a login page for a production React application used by a team of engineers. The app uses React with TypeScript, Tailwind CSS, and React Hook Form with Zod for validation. It's for an internal ML platform where engineers authenticate to access dashboards and data. The login should call a real API endpoint and handle loading and error states properly.
+
+Structure the output as:
+1. The full Login component
+2. Unit tests for the form validation
+3. A README explaining the component's decisions and trade-offs
+
+Quality Criteria:
+- 100% accessibility compliance (WCAG 2.1 AA)
+- Complete TypeScript coverage (no `any` types)
+- Mobile-responsive design
+- Loading states for all async operations
+- Comprehensive error handling (network, validation, API)
+- Rate limiting with user feedback
+- Secure token storage with expiration
+
+Constraints:
+- Under 300 lines for the main component
+- All strings must be in a separate locale file (i18n ready)
+- Include proper ARIA attributes and keyboard navigation
+- No console warnings or errors
+- All tests must pass
+
+After writing the code, review it against the criteria above. Identify any weaknesses, security concerns, or gaps. If you find issues, revise the code and explain what you changed.
+
+
+---
+
+## Summary Table
+
+| Version | Layer Added | What Improved |
+|---------|-------------|---------------|
+| 0 | Baseline | N/A |
+| 1 | Defined audience | React instead of vanilla HTML; separated concerns; security comments |
+| 2 | Real context | Complete validation with Zod; API integration; loading states; password toggle |
+| 3 | Specified format | Comprehensive tests; detailed README with architecture decisions |
+| 4 | Constraints + Quality | i18n support; WCAG 2.1 AA compliance; 100% TypeScript coverage; rate limiting |
+| 5 | Verification | Self-review caught 10 issues: timeouts, memory leaks, sanitization, accessibility, focus management |
+
+**Most valuable layer:** Verification (Version 5) — it caught the most issues and led to the most improvements. Adding a self-review step transformed good code into production-ready code.
+
+**What I learned:** Prompt engineering is iterative. Each layer builds on the previous one. The verification layer (self-review) was the most impactful because it forced the AI to think critically about its own output and catch issues that weren't obvious from the initial prompt.
