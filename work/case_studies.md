@@ -46,6 +46,6 @@ I build things that work. I'm an ML practitioner who takes projects from raw dat
 
 **Let's build something.**
 
-📧 [Your email]  
+📧 breattahokeyo@gmail.com  
 🔗 [GitHub](https://github.com/ml-bree/flyrank-ml-internship-starter)  
-💼 [LinkedIn - optional]
+💼 [LinkedIn](https://www.linkedin.com/in/breattah-okeyo-0693963b1/)
