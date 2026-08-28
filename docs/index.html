@@ -36,13 +36,17 @@
 
 <div class="abstract">
     <h3>Abstract</h3>
-    <p>This paper presents a machine learning approach to predicting user intent from search engagement signals. Using the FlyRank ML Internship dataset, I built a Random Forest classifier that predicts whether a page matches user intent based on CTR, engagement_rate, and position metrics. The model achieves <strong>0.760 Precision@50</strong>, outperforming both the hand-rule baseline (0.680) and a single decision tree (0.740).</p>
+    <p>At FlyRank, content ranks well but quietly decays over time — pages lose engagement, CTR drops, and no one gets an alert. This paper presents a machine learning approach to predicting which pages need attention before they decline. Using the FlyRank ML Internship dataset, I built a Random Forest classifier that predicts whether a page matches user intent based on CTR, engagement_rate, and position metrics. The model achieves <strong>0.760 Precision@50</strong>, outperforming the hand-rule baseline (0.680). The output is a ranked action playbook: Refresh, Rewrite, Monitor, Protect, or Review.</p>
 </div>
 
 <h2>1. Introduction</h2>
-<p>Search ranking systems need to understand what users actually want. A page that ranks high but doesn't match user intent leads to poor engagement and user frustration. The challenge is that user intent isn't directly observable — we can only see engagement signals.</p>
+<p>At FlyRank, content teams face a common problem: pages that rank well today may quietly lose engagement over time. CTR drops. Users stop clicking. The page decays, but no one gets an alert.</p>
 
-<p>This work addresses the question: <strong>Can we predict whether a page matches user intent using search engagement signals?</strong></p>
+<p>The existing approach uses hand-written rules — flags like <code>needs_ctr_fix</code> or <code>is_quick_win</code>. These rules work for a while, then the data changes, and they stop working. A person must re-tune them by hand, again and again.</p>
+
+<p>This work addresses the question: <strong>Can we predict which pages are declining in engagement before they become a problem?</strong></p>
+
+<p>The decision this work supports is: <strong>Which pages should be prioritized for content refresh?</strong></p>
 
 <h2>2. Data</h2>
 <p><strong>Dataset:</strong> FlyRank ML Internship warehouse release (Hugging Face)</p>
